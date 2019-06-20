@@ -7,11 +7,50 @@ section.above-the-fold {
   height: 600px;
 }
 
+.above-the-fold {
+  position: relative;
+}
+
+.above-the-fold > .chrome-link {
+  position: absolute;
+  
+  right: 40px;
+  top: 40px;
+  z-index: 100;
+}
+
+@media (max-width: 740px) {
+  .chrome-link {
+    display: none;
+  }
+}
+
+.above-the-fold > .chrome-link > img {
+  width: 240px;
+}
+.login .location-fields {
+  position: relative;
+}
+.login .left-symbol {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  height: 80px
+}
+
+.login .right-symbol {
+  position: absolute;
+  right: 0; 
+  width: 25px;
+  top: 25px;
+}
+
 section.above-the-fold > .login h3 {
   font-weight: 400;
 }
 
 section.above-the-fold > .login {
+  border: 1px solid #a9c4e8;
   width: 400px;
   /* float: left; */
   /* height: 100%; */
