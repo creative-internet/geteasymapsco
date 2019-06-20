@@ -1,0 +1,291 @@
+/* Above-the-fold section*/
+
+section.above-the-fold {
+  padding-top: 0;
+  padding-bottom: 0;
+  /* overflow: hidden; */
+  height: 600px;
+}
+
+section.above-the-fold > .login h3 {
+  font-weight: 400;
+}
+
+section.above-the-fold > .login {
+  width: 400px;
+  /* float: left; */
+  /* height: 100%; */
+  z-index: 20;
+  left: 40px;
+  top: 40px;
+  background-color: white;
+  position: absolute;
+}
+
+@media screen and (min-width: 640px) {
+  .mapboxgl-ctrl-geocoder {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  
+  section.above-the-fold > .login {
+    /* padding-bottom: 5em; */
+  }
+  section.above-the-fold > .login, section.above-the-fold > .map-container {/*    float: none;*//* width: 100% !important; *//* height: 100vh; *//*    min-height: 50vh;*//* position: relative; */}
+  
+  .features-CTA .cta > p {
+    min-height: unset !important;
+  }
+  
+  .features-CTA .cta > p + a {
+    margin-bottom: 2em;
+  }
+  
+  iframe {
+    min-height: 400px;
+  }
+}
+
+@media (min-width: 1201px) {
+  section.above-the-fold {
+    /* height: 600px; */
+  }
+  section.above-the-fold .login {
+    /* position: absolute; */
+  }
+  
+  section.above-the-fold .marketing {
+    position: absolute;
+    bottom: 20px;
+  }
+  
+/*
+  section.features-CTA > .container > .row > div.cta {
+    border-right: 1px solid #eee;
+  }
+*/
+  
+  section.features-CTA > .container > .row > div.cta:last-child {
+    border-right: none;
+  }
+  
+  section.above-the-fold > .map-container { 
+    position: relative;
+  }
+
+  section.above-the-fold > .map-container > iframe {
+      display: block;
+      position: relative;
+      z-index: 1;
+  }
+  section.above-the-fold > .map-container:before {
+  /*    background-color: rgba(255,255,255,.5);  Added only to show overlay, can be removed */
+  /* content: ''; */
+  /* position: absolute; */
+  /* z-index: 2; */
+  /* box-shadow: inset 4px 0px 10px 0px #c7c7c7; */
+  /* top: 0; */
+  /* right: 0; */
+  /* bottom: 0; */
+  /* left: 0; */
+  /* pointer-events: none; */
+  }
+}
+
+.animatedBtn {
+  transform: translateZ(-400px);
+}
+
+section.above-the-fold > .login > .logo-container {
+/*  background-color: #eeeeee;*/
+/*  height: 80px*/
+}
+
+section.above-the-fold > .login > .logo-container > img {
+  max-width: 250px;
+}
+
+a.action-button i {
+  font-size: 1.5em;
+}
+
+.secondary-CTA > img {
+  width: 50px;
+  padding-bottom: 10px;
+}
+
+.secondary-CTA > a.action-button {
+  width: 300px;
+}
+
+.images-CTA a.action-button {
+  width: 160px;
+  font-size: 0.9em;
+  height: auto;
+}
+
+.images-CTA p {
+  font-size: 0.8em;
+}
+
+a.action-button {
+/*  width: 340px;*/
+  background-color: #3366CC;
+  border: 2px solid #3873d6;
+  font-weight: 800;
+  color: #fff;
+  height: 60px;
+  font-size: 35px;
+  border-radius: 5px;
+  position: relative;
+  width: 350px;
+  display: block;
+}
+
+a.action-button i {
+  position: absolute;
+  right: 20px;
+}
+section.above-the-fold .marketing{
+  font-size: 0.8em;  
+  font-weight: 500;
+}
+
+section.above-the-fold .marketing > a {
+  color: black;
+  text-decoration: underline;
+}
+
+
+section.above-the-fold > .map-container {
+  width: 100%;
+  height: 100%;
+  float: right;
+  z-index: 10;
+  position: relative;
+}
+
+/* images-CTA section */
+.images-CTA {
+  background-color: #EBEBEB;
+}
+
+.images-CTA h2, .images-CTA h4 {
+  color: #535353;  
+}
+
+section {
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+
+/*features-CTA section*/
+.features-CTA .cta > img {
+  height: 80px;
+  
+}
+
+.features-CTA h3 {
+  color: #3366CC;
+}
+
+.features-CTA h5 {
+  color: #0066FF;
+  font-size: 1.5em;
+}
+
+/* .quote section */
+
+section.blue-CTA {
+  min-height: 400px;
+  background-color: #4283f0;
+  background-image: url(../images/bluebg.png);
+  background-size: cover;
+}
+
+section.blue-CTA p {
+  font-size: 0.9em;
+  text-align: left;
+  margin: 0 20px;
+}
+
+footer {
+  background-color: #66CCFF;
+  color: white;
+  font-weight: 100;
+  font-size: 0.9em;
+  padding: 20px 0;
+}
+
+footer > p {
+  margin-bottom: 0;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+  margin: 0 5px;
+  position: relative;
+}
+
+footer a:hover {
+  color: white;
+}
+
+@media (max-width: 900px) {
+  footer a:after {
+    content: '';
+    display: none;
+  }
+}
+
+footer a:after {
+  content: '|';
+  position: absolute;
+  right: -10px;
+}
+
+footer a:last-of-type:after {
+  content: ''
+}
+
+
+#geocoder1.geocoder {
+  z-index: 40;
+}
+
+#geocoder2.geocoder {
+  z-index: 20;
+  position: relative;
+}
+
+.geocoder .mapboxgl-ctrl-geocoder {
+  box-shadow: none;
+}
+
+.geocoder .mapboxgl-ctrl-geocoder > svg {
+  display: none;
+}
+
+.geocoder .mapboxgl-ctrl-geocoder > input {
+  padding: 6px 10px;
+  border: 1px solid #e1e1e1;
+  border-radius: 6px;
+  transition: 0.2s linear border-color;
+  border-color: #e1e1e1;
+}
+
+.geocoder .mapboxgl-ctrl-geocoder > input:focus {
+  border-color: #bbb;
+}
+
+.location-fields label[for="startLocation"] + div {
+  z-index: 40;
+}
+
+.location-fields label[for="destination"] + div {
+  z-index: 20;
+}
